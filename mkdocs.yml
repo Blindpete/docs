@@ -1,8 +1,46 @@
+# Project information
 site_name: My Docs
+site_description: A Collection of docs
+site_author: Pete Cook
+site_url: https://github.com/Blindpete/docs/
+
+
+repo_name: Blindpete/docs/
+repo_url: https://github.com/Blindpete/docs
+edit_uri: ""
+
 
 theme:
   name: 'material'
+  font:
+    text: Ubuntu
+    code: Ubuntu Mono
 
 markdown_extensions:
   - codehilite
+  - markdown.extensions.codehilite:
+      guess_lang: false
+      use_pygments: True
+      noclasses: True
+      pygments_style: native
+  - markdown.extensions.toc:
+      permalink: true
   - admonition
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra:
+  social:
+    - type: globe
+      link: https://petecook.co.uk
+    - type: github-alt
+      link: https://github.com/Blindpete
+    - type: twitter
+      link: https://twitter.com/blindpete
+
+#pages:
+#  - Home: index.md
+#  - Ansible:
+#    - SSH Keys: Ansible/keys.md
+#    - SSH: Ansible/ssh.md
+#    - Test: Ansible/stuff.md
